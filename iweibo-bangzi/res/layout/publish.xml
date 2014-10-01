@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/dreamerx_bar" >
+
+        <Button
+            android:id="@+id/publish_btn"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/publish_bt2" />
+
+        <Button
+            android:id="@+id/photo_btn"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignBaseline="@+id/publish_btn"
+            android:layout_alignBottom="@+id/publish_btn"
+            android:layout_marginRight="24dp"
+            android:layout_toLeftOf="@+id/publish_btn"
+            android:background="@drawable/photo_bt" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DEDEDE" />
+
+    <com.droidstouch.iweibo.util.myedit_util
+        android:id="@+id/editdream"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:inputType="none"
+        android:singleLine="false"
+        android:textColor="#4F4F4F" />
+
+</LinearLayout>

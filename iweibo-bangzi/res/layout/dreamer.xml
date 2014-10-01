@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/dreamerx_bar" >
+
+        
+
+        <Button
+            android:id="@+id/write_btn"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            
+            android:layout_marginRight="10dip"
+            android:background="@drawable/write" />
+
+        <Button
+            android:id="@+id/refresh_btn"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dip"
+            android:layout_toLeftOf="@id/write_btn"
+            android:background="@drawable/refresh_btn" />
+    </RelativeLayout>
+    <!-- <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dip"
+        android:text="none"
+        /> -->
+    <com.droidstouch.iweibo.util.ReFlashListView
+        android:id="@+id/lv_dreamer"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dip"
+       />
+    
+    
+    
+    
+    
+
+</LinearLayout>
